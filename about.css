@@ -1,0 +1,149 @@
+.level {
+  padding: 8.6rem 0 13.3rem;
+}
+
+.level > .title {
+  max-width: 590px;
+  height: 146.83px;
+  margin: 0 auto;
+}
+
+.level > .describe {
+  margin: 4.217rem auto 4rem;
+
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.3rem;
+  line-height: 6.2rem;
+  text-align: center;
+  letter-spacing: 0.6em;
+}
+
+.level .double-line {
+  width: 100%;
+  height: 17px;
+  border-top: 0.4rem solid var(--borwn-color);
+  border-bottom: 0.4rem solid var(--borwn-color);
+
+  margin-bottom: 9.9rem;
+}
+
+/*****************level info style****************/
+
+.level .info .item {
+  background: url("/image/bg-info.png");
+  background-size: 100% 100%;
+  max-width: 1200px;
+  height: 528px;
+  padding: 1.6rem 4rem;
+  margin: 4.2rem 0;
+}
+
+.level .info .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.level .info .title .text {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 6.4rem;
+  color: var(--white-color);
+}
+
+.level .info .title .icon {
+  max-width: 327px;
+  height: 69px;
+}
+
+.level .info .describe {
+  display: flex;
+  gap: 86.65px;
+  padding: 6.6rem 10.6rem;
+}
+
+.level .info .describe .pic {
+  max-width: 313.38px;
+  height: 290px;
+
+  position: relative;
+  flex: 1;
+}
+
+.level .info .describe .text {
+  flex: 2;
+}
+
+.level .info .describe .pic .scroll-down {
+  max-width: 63.07px;
+  height: 98.62px;
+  position: absolute;
+  left: 80px;
+  top: 170px;
+}
+
+.level .info .describe .pic .pic-pdf {
+  position: absolute;
+  max-width: 240px;
+  height: 300px;
+  top: -10px;
+  left: 10px;
+}
+
+.level .info .describe .pic .pic-recycle {
+  position: absolute;
+  max-width: 297px;
+  height: 245px;
+  top: 25px;
+  left: 0px;
+}
+
+.level .info .describe .text h1 {
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4.4rem;
+  line-height: 6.3rem;
+  color: var(--borwn-color);
+}
+
+.level .info .describe .text p {
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+  padding: 1.4rem 0 8rem;
+}
+
+.level .info .describe .btn button {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 2.8rem;
+  line-height: 4.1rem;
+  background: none;
+  outline: none;
+  border: none;
+  width: 183px;
+  height: 70px;
+  text-align: center;
+  padding: 1.45rem 0rem;
+  border-radius: 4rem;
+  box-shadow: (0px 0.4rem 0.4rem rgba(0, 0, 0, 0.25));
+}
+
+.level .info .describe .btn button:nth-child(1) {
+  border: 3px solid var(--borwn-color);
+  color: var(--borwn-color);
+  margin-right: 2rem;
+}
+
+.level .info .describe .btn button:nth-child(2) {
+  background-color: var(--red-color);
+  color: var(--white-color);
+}

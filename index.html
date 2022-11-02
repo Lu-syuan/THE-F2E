@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="cssreset.css" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="home.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>week1</title>
   </head>
@@ -74,8 +76,99 @@
         </div>
       </div>
     </section>
-    <section class="test">
-      <div class="box"></div>
+
+    <section class="about">
+      <div class="level">
+        <div class="title">
+          <img src="/image/title.png" alt="" />
+        </div>
+        <p class="describe">年度最強合作，三大關卡來襲</p>
+        <div class="double-line"></div>
+
+        <div class="info">
+          <!-- --------------- info item1 ----------- -->
+          <div class="item">
+            <div class="title">
+              <h1 class="text">視差滾動 Parallax Scrolling</h1>
+              <div class="icon">
+                <img src="/image/company-2.png" alt="" />
+              </div>
+            </div>
+            <div class="describe">
+              <div class="pic">
+                <img src="/image/bg-box.png" alt="" />
+                <img class="scroll-down" src="/image/scroll down.png" alt="" />
+              </div>
+              <div class="text">
+                <h1>The F2E 活動網站設計</h1>
+                <p>
+                  請參考本屆官網的首頁視差滾動技巧，並請您重新 redesign
+                  本頁面來設計。
+                </p>
+                <div class="btn">
+                  <button>關卡攻略</button>
+                  <button>投稿</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- --------------- info item2 ----------- -->
+          <div class="item">
+            <div class="title">
+              <h1 class="text">線上簽署 Canvas</h1>
+              <div class="icon">
+                <img src="/image/company-3.png" alt="" />
+              </div>
+            </div>
+            <div class="describe">
+              <div class="pic">
+                <img src="/image/bg-box.png" alt="" />
+                <img class="pic-pdf" src="/image/pdf.png" alt="" />
+              </div>
+              <div class="text">
+                <h1>今晚，我想來點點簽</h1>
+                <p>
+                  每次要 PDF 簽名都要列印出來再掃描好麻煩，自幹一個 Web
+                  版本的簽名服務吧！
+                </p>
+                <div class="btn">
+                  <button>關卡攻略</button>
+                  <button>投稿</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- --------------- info item3 ----------- -->
+          <div class="item">
+            <div class="title">
+              <h1 class="text">Scrum JS draggable</h1>
+              <div class="icon">
+                <img src="/image/company-1.png" alt="" />
+              </div>
+            </div>
+            <div class="describe">
+              <div class="pic">
+                <img src="/image/bg-box.png" alt="" />
+                <img class="pic-recycle" src="/image/recycle.png" alt="" />
+                <img class="scroll-down" src="/image/scroll down.png" alt="" />
+              </div>
+              <div class="text">
+                <h1>Scrum 新手村</h1>
+                <p>
+                  設計關卡內容與網頁互動效果，透過頁面關卡來呈現知識點，讓挑戰者藉由你設計的內容更了解
+                  Scrum。
+                </p>
+                <div class="btn">
+                  <button>關卡攻略</button>
+                  <button>投稿</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 
@@ -83,4 +176,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
   <script src="main.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
