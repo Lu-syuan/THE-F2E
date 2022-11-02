@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="about.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>week1</title>
@@ -85,9 +85,13 @@
         <p class="describe">年度最強合作，三大關卡來襲</p>
         <div class="double-line"></div>
 
-        <div class="info">
+        <div class="info" style="overflow-x: hidden">
           <!-- --------------- info item1 ----------- -->
-          <div class="item">
+          <div
+            class="item"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="title">
               <h1 class="text">視差滾動 Parallax Scrolling</h1>
               <div class="icon">
@@ -114,7 +118,7 @@
           </div>
 
           <!-- --------------- info item2 ----------- -->
-          <div class="item">
+          <div class="item" data-aos="fade-left" data-aos-easing="ease-in-sine">
             <div class="title">
               <h1 class="text">線上簽署 Canvas</h1>
               <div class="icon">
@@ -141,7 +145,11 @@
           </div>
 
           <!-- --------------- info item3 ----------- -->
-          <div class="item">
+          <div
+            class="item"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="title">
               <h1 class="text">Scrum JS draggable</h1>
               <div class="icon">

@@ -29,6 +29,8 @@ body {
 
 body {
   background: url("/image/bg2.png");
+  overflow-x: hidden;
+  position: relative;
 }
 
 img {
@@ -50,8 +52,6 @@ section {
   background-size: 100% 100%;
   padding: 10.1rem 4rem 2.2rem;
   position: relative;
-  overflow: hidden;
-  /* z-index: 2; */
 }
 
 .cover-top {
@@ -94,7 +94,6 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
-  /* opacity: 1; */
 }
 
 .cover {
@@ -102,7 +101,6 @@ section {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  /* background-color: red; */
   z-index: 200;
 }
 
