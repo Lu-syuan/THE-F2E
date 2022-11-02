@@ -3,8 +3,17 @@ gsap.registerPlugin(ScrollTrigger, TextPlugin);
 const mousemoveTimeline = gsap.timeline({ repeat: -1 });
 const scrollCover = gsap.timeline({
   scrollTrigger: {
+    trigger: ".cover", // 決定scrolltrigger要以哪一個元素作為觸發基準點
+    markers: true, // 開啟start & end標記點，單純方便瀏覽動畫開始與結束點
+    pin: true,
+    scrub: true, //重要！開啟scrub來決定動畫播放是否依賴視窗滾動
+  },
+});
+
+const scrollFace = gsap.timeline({
+  scrollTrigger: {
     trigger: ".home", // 決定scrolltrigger要以哪一個元素作為觸發基準點
-    markers: false, // 開啟start & end標記點，單純方便瀏覽動畫開始與結束點
+    markers: true, // 開啟start & end標記點，單純方便瀏覽動畫開始與結束點
     pin: true,
     scrub: true, //重要！開啟scrub來決定動畫播放是否依賴視窗滾動
   },
