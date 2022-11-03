@@ -327,3 +327,52 @@
 }
 
 /*****************Awards style end****************/
+
+/************footer sytle start******************/
+
+footer .container {
+  background-color: var(--borwn-color);
+  padding: 5.4rem 6.6rem;
+  text-align: center;
+}
+
+footer .sponsor {
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 6rem;
+  line-height: 8.6rem;
+  color: var(--white-color);
+  margin-bottom: 5rem;
+}
+
+footer .author {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer .logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .logo .pic:nth-child(1) {
+  max-width: 344px;
+  height: 69px;
+}
+
+footer .logo .pic:nth-child(2) {
+  max-width: 190px;
+  height: 83px;
+}
+footer .logo .pic:nth-child(3) {
+  max-width: 354px;
+  height: 67px;
+}
+
+/************footer sytle end******************/
