@@ -152,6 +152,10 @@
 
 /*****************time style start****************/
 
+.time .container {
+  padding: 0 3.7rem 9.2rem;
+}
+
 .time .title {
   max-width: 100%;
   height: 170px;
@@ -169,16 +173,40 @@
 }
 
 .time .process {
-  padding: 0 3.7rem;
+  /* padding: 0 3.7rem; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
 }
 
-.time .line-up {
+.time .line-up,
+.time .line-bottom {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin: 9rem 0;
+  position: relative;
 }
 
-.time .line-up .item {
+.time .line-bottom {
+  justify-content: center;
+  gap: 230px;
+  position: relative;
+}
+
+.time .line-bottom::after {
+  content: "";
+  width: 328px;
+  height: 5px;
+  background-color: var(--borwn-color);
+  position: absolute;
+  top: 48%;
+  left: 35%;
+  z-index: -1;
+}
+
+.time .line-up .item,
+.time .line-bottom .item {
   max-width: 261px;
   display: flex;
   justify-content: center;
@@ -187,15 +215,32 @@
   color: var(--borwn-color);
 }
 
-.time .line-up .item .diamond {
+.time .line-up .item .diamond,
+.time .line-bottom .item .diamond {
   width: 48.53px;
   height: 48.53px;
   transform: rotate(-45deg);
-  background-color: var(--red-color);
-  margin: 2rem 0 3.27rem;
+  background-color: var(--borwn-color);
+  margin: 3rem 0 4rem;
 }
 
-.time .line-up .item p:nth-child(1) {
+.time .line-up .item .diamond.color-red {
+  background-color: var(--red-color);
+}
+
+.time .line-up::after {
+  content: "";
+  width: 957px;
+  height: 5px;
+  background-color: var(--borwn-color);
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  z-index: -1;
+}
+
+.time .line-up .item p:nth-child(1),
+.time .line-bottom .item p:nth-child(1) {
   font-family: "Noto Sans TC";
   font-style: normal;
   font-weight: 400;
@@ -203,12 +248,13 @@
   line-height: 4.3rem;
 }
 
-.time .line-up .item p:nth-child(3) {
+.time .line-up .item p:nth-child(3),
+.time .line-bottom .item p:nth-child(3) {
   font-family: "Noto Sans TC";
   font-style: normal;
   font-weight: 400;
   font-size: 2.4rem;
-  line-height: 3.5rem;
+  line-height: 4rem;
 }
 
 .time .describe {
