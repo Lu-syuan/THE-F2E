@@ -77,12 +77,25 @@
       <div id="app">
       <section class="about">
         <div class="level">
+
+            <!-- beans1 -->
+            <div class="beans one"
+            @click="collectBeanHandler(0)" 
+            :class="{isCheck:beans[0].Checked}"
+            >
+              <img src="/image/beans5.png" alt="">
+            </div>
+
+            <!-- beans1 -->
+
           <div class="title">
             <img src="/image/title.png" alt="" />
           </div>
           <p class="describe">年度最強合作，三大關卡來襲</p>
           <div class="double-line"></div>
           <div class="info" style="overflow-x: hidden">
+          
+
             <!-- --------------- info item1 ----------- -->
             <div
               class="item"
@@ -174,6 +187,25 @@
         </div>
         <!------------ Time section ------------>
         <div class="time">
+            <!-- beans2 -->
+            <div class="beans two"
+            @click="collectBeanHandler(1)" 
+            :class="{isCheck:beans[1].Checked}"
+           >
+              <img src="/image/beans4.png" alt="">
+            </div>
+
+            <!-- beans2 -->
+
+              <!-- beans3 -->
+              <div class="beans three"
+              @click="collectBeanHandler(2)" 
+              :class="{isCheck:beans[2].Checked}"
+              >
+                <img src="/image/beans3.png" alt="">
+              </div>
+  
+              <!-- beans3 -->
           <div class="title">
             <h1>賽程時間</h1>
           </div>
@@ -288,13 +320,26 @@
         </div>
         <!------------ Awards section  End ------------>
         <!------------ live section  start ------------>
+
+        <!-- 使用者點擊後再顯示live sction -->
         <div class="live-open" v-if="!showLiveSection">
+             <!-- beans4 -->
+             <div class="beans four"
+             @click="collectBeanHandler(3)" 
+             :class="{isCheck:beans[3].Checked}"
+             
+             >
+              <img src="/image/beans1.png" alt="">
+            </div>
+
+            <!-- beans4 -->
           <p @click="showLiveSection = !showLiveSection">意想不到的好康<span>請點擊</span>
             <div class="animation-container"></div>
           </p>
       
         </div>
         <div id="live" v-if="showLiveSection">
+
           <div class="title">
             <h1>各界大神直播分享</h1>
           </div>
@@ -343,38 +388,65 @@
           </div>
 
           <!---------------------footer------------------->
-        <footer>
-          <div class="container">
-            <div class="sponsor">
-              <h1>贊助單位</h1>
+            <footer>
+
+            <!-- beans5 -->
+             <div class="beans five" 
+             @click="collectBeanHandler(4)" 
+             :class="{isCheck:beans[4].Checked}"
+             >
+              <img src="/image/beans2.png" alt="">
             </div>
-            <div class="logo">
-              <div class="pic">
-                <img src="/image/company-2.png" alt="" />
+
+            <!-- beans5 -->
+              <div class="container">
+                <div class="sponsor">
+                  <h1>贊助單位</h1>
+                </div>
+                <div class="logo">
+                  <div class="pic">
+                    <img src="/image/company-2.png" alt="" />
+                  </div>
+                  <div class="pic">
+                    <img src="/image/company-3.png" alt="" />
+                  </div>
+                  <div class="pic">
+                    <img src="/image/company-1.png" alt="" />
+                  </div>
+                </div>
               </div>
-              <div class="pic">
-                <img src="/image/company-3.png" alt="" />
+              <div class="author">
+                <p>© Code: Syuan / Design: KT</p>
               </div>
-              <div class="pic">
-                <img src="/image/company-1.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="author">
-            <p>© Code: Syuan / Design: KT</p>
-          </div>
-        </footer>
+            </footer>
+        </div>
+        <!------------ live section  End ------------>
+
+        <!-- 使用者收集完五顆豆子才顯示 -->
+        <div class="discount"
+            data-aos="fade-down"
+            data-aos-easing="ease-in-sine"
+            v-if="countBean === 5"
+            :class="{isClose:close}"
+            >
+ 
+            <div class="close"
+            @click="closeDiscount"
+            ><i class="fa-solid fa-xmark"></i></div>
+            <p>恭喜您！獲得六角課程專屬折扣碼</p>
+            <p>【HEXSCHOOL2022】</p>
+ 
+        </div>
 
         </div>
 
 
-        <!------------ live section  End ------------>
         
       </section>
     </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
-
+  <script src="https://kit.fontawesome.com/6c92ff04b8.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>

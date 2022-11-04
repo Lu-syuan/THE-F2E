@@ -4,7 +4,7 @@ const mousemoveTimeline = gsap.timeline({ repeat: -1 });
 const scrollCover = gsap.timeline({
   scrollTrigger: {
     trigger: ".cover", // 決定scrolltrigger要以哪一個元素作為觸發基準點
-    markers: true, // 開啟start & end標記點，單純方便瀏覽動畫開始與結束點
+    markers: false, // 開啟start & end標記點，單純方便瀏覽動畫開始與結束點
     pin: true,
     scrub: true, //重要！開啟scrub來決定動畫播放是否依賴視窗滾動
   },
@@ -13,7 +13,7 @@ const scrollCover = gsap.timeline({
 const scrollFace = gsap.timeline({
   scrollTrigger: {
     trigger: ".home", // 決定scrolltrigger要以哪一個元素作為觸發基準點
-    markers: true, // 開啟start & end標記點，單純方便瀏覽動畫開始與結束點
+    markers: false, // 開啟start & end標記點，單純方便瀏覽動畫開始與結束點
     pin: true,
     scrub: true, //重要！開啟scrub來決定動畫播放是否依賴視窗滾動
   },
@@ -53,7 +53,29 @@ const vm = new Vue({
   data() {
     return {
       showLiveSection: false,
+      beans: [
+        { id: 0, Checked: false },
+        { id: 1, Checked: false },
+        { id: 2, Checked: false },
+        { id: 3, Checked: false },
+        { id: 4, Checked: false },
+      ],
+      //countBean == 5 ||　close ==true　會把discount訊息關掉
+      countBean: 0,
+      close: false,
     };
   },
-  computed: {},
+  methods: {
+    collectBeanHandler(id) {
+      this.beans.forEach((bean) => {
+        if (bean.id === id) {
+          bean.Checked = true;
+          this.countBean += 1;
+        }
+      });
+    },
+    closeDiscount() {
+      this.close = true;
+    },
+  },
 });

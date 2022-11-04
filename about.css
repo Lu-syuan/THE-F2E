@@ -3,8 +3,21 @@
   background-size: 100% 100%;
 }
 
+.beans {
+  width: 62.25px;
+  height: 55.14px;
+  position: absolute;
+  z-index: 100;
+}
+
+.beans.one {
+  bottom: 4%;
+  left: 2%;
+}
+
 .level {
   padding: 8.6rem 4rem 13.3rem;
+  position: relative;
 }
 
 .level > .title {
@@ -35,6 +48,10 @@
 }
 
 /*****************level info style****************/
+
+.level .info {
+  position: relative;
+}
 
 .level .info .item {
   background: url("/image/bg-info.png");
@@ -156,6 +173,20 @@
 /*****************level info style end****************/
 
 /*****************time style start****************/
+
+.time {
+  position: relative;
+}
+
+.beans.two {
+  bottom: 45%;
+  right: 25%;
+}
+
+.beans.three {
+  bottom: 3%;
+  right: 10%;
+}
 
 .time .container {
   padding: 0 3.7rem 9.2rem;
@@ -349,6 +380,11 @@
   position: relative;
 }
 
+.beans.four {
+  top: 10%;
+  left: 10%;
+}
+
 .live-open p {
   width: 504px;
   font-family: "Noto Serif TC";
@@ -478,6 +514,15 @@
 
 /************footer sytle start******************/
 
+footer {
+  position: relative;
+}
+
+.beans.five {
+  top: 10%;
+  right: 10%;
+}
+
 footer .container {
   background-color: var(--borwn-color);
   padding: 5.4rem 6.6rem;
@@ -524,3 +569,66 @@ footer .logo .pic:nth-child(3) {
 }
 
 /************footer sytle end******************/
+
+.discount {
+  position: fixed;
+  top: calc(50% - (310px / 2));
+  left: calc(50% - (527px / 2));
+  width: 527px;
+  height: 310px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  /* display: none; */
+}
+
+.discount.isClose {
+  display: none;
+}
+
+.discount p:nth-child(2) {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 5.5rem;
+  color: var(--borwn-color);
+  /* or 220% */
+}
+
+.discount p:nth-child(3) {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.5rem;
+  color: var(--red-color);
+}
+
+.discount .close {
+  width: 72px;
+  height: 72px;
+  background-color: var(--borwn-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+}
+
+.discount .close i {
+  width: 72px;
+  height: 72px;
+  font-size: 4rem;
+  line-height: 72px;
+  position: absolute;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.beans.isCheck {
+  display: none;
+}
