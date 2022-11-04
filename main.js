@@ -45,3 +45,15 @@ const animation = lottie.loadAnimation({
   autoplay: true,
   name: "loading",
 });
+
+/*******Vue************/
+
+const vm = new Vue({
+  el: "#app",
+  data() {
+    return {
+      showLiveSection: false,
+    };
+  },
+  computed: {},
+});
