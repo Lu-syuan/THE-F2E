@@ -1,3 +1,8 @@
+.about {
+  background: url("/image/bg2.png") no-repeat;
+  background-size: 100% 100%;
+}
+
 .level {
   padding: 8.6rem 4rem 13.3rem;
 }
@@ -37,7 +42,7 @@
   max-width: 1200px;
   height: 528px;
   padding: 1.6rem 4rem;
-  margin: 4.2rem 0;
+  margin: 4.2rem auto;
 }
 
 .level .info .title {
@@ -157,14 +162,16 @@
 }
 
 .time .title,
-.awards .title {
-  max-width: 100%;
+.awards .title,
+#live .title {
+  width: 100vw;
   height: 170px;
   background-color: var(--borwn-color);
 }
 
 .time .title h1,
-.awards .title h1 {
+.awards .title h1,
+#live .title h1 {
   font-family: "Noto Serif TC";
   font-style: normal;
   font-weight: 900;
@@ -204,7 +211,7 @@
   position: absolute;
   top: 48%;
   left: 35%;
-  z-index: -1;
+  z-index: 1;
 }
 
 .time .line-up .item,
@@ -224,6 +231,7 @@
   transform: rotate(-45deg);
   background-color: var(--borwn-color);
   margin: 3rem 0 4rem;
+  z-index: 2;
 }
 
 .time .line-up .item .diamond.color-red {
@@ -238,7 +246,7 @@
   position: absolute;
   top: 40%;
   left: 10%;
-  z-index: -1;
+  z-index: 1;
 }
 
 .time .line-up .item p:nth-child(1),
@@ -271,20 +279,26 @@
 
 /*****************Awards style start****************/
 
+.awards {
+  padding-bottom: 1.2rem;
+}
+
 .awards .awards-items {
   padding: 9.2rem 4.1rem;
   display: flex;
+  /* width: 100%; */
   gap: 2rem;
+  margin: 0 auto;
   /* height: px; */
 }
 
 .awards .awards-items .item {
-  width: 386px;
+  width: 30.15vw;
 }
 
 .awards-items .item .pic {
-  max-width: 386px;
-  height: 374.07px;
+  width: 30.15vw;
+  height: 29.21vw;
   position: relative;
 }
 
@@ -327,6 +341,83 @@
 }
 
 /*****************Awards style end****************/
+
+/************live sytle start******************/
+
+#live .person {
+  padding: 3.1rem 10.8rem 6.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+#live .person .item {
+  padding: 47.68px 6rem 27.26px;
+  max-width: 40.78vw;
+  height: 738.5px;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.2rem;
+}
+
+#live .person .item:nth-child(1) {
+  background: url("/image/people-1.png");
+}
+
+#live .person .item:nth-child(2) {
+  background: url("/image/people-4.png");
+}
+
+#live .person .item:nth-child(3) {
+  background: url("/image/people-3.png");
+}
+
+#live .person .item:nth-child(4) {
+  background: url("/image/people-2.png");
+}
+
+#live .item .describe {
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 5.7rem;
+  line-height: 6.2rem;
+  color: var(--borwn-color);
+}
+
+#live .item .time {
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 6.7rem;
+  color: var(--borwn-color);
+}
+
+#live .item .name {
+  background: url("/image/person-name-bg.png");
+  background-size: 100% 100%;
+  padding: 0.7rem 3.5rem 0.7rem 2.4rem;
+  max-width: 259px;
+  height: 66px;
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  /* or 130% */
+  color: var(--white-color);
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 12.12%;
+  transform: translateX(-50%);
+}
+/************live sytle end******************/
 
 /************footer sytle start******************/
 
