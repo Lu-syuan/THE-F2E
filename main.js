@@ -34,3 +34,14 @@ scrollCover
   .to(".pic-face", { yPercent: -110 }, "<")
   .to(".pic-task", { opacity: 1, ease: "expo" })
   .to(".mouse", { opacity: 1, ease: "expo" }, "<");
+
+/****json animation */
+
+const animation = lottie.loadAnimation({
+  container: document.querySelector(".animation-container"),
+  path: "loading.json",
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  name: "loading",
+});

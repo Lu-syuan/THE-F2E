@@ -342,6 +342,40 @@
 
 /*****************Awards style end****************/
 
+/************live-open sytle start******************/
+
+.live-open {
+  min-height: 100vh;
+  position: relative;
+}
+
+.live-open p {
+  width: 504px;
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 7.2rem;
+  line-height: 10.3rem;
+  text-align: center;
+  color: var(--borwn-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid black; */
+}
+
+.live-open span {
+  color: var(--red-color);
+}
+
+.live-open .animation-container {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+}
+/************live-open sytle end******************/
+
 /************live sytle start******************/
 
 #live .person {
@@ -352,45 +386,65 @@
 }
 
 #live .person .item {
-  padding: 47.68px 6rem 27.26px;
-  max-width: 40.78vw;
-  height: 738.5px;
-  background-size: 100% 100%;
+  padding: 20.6px 6rem 27.26px;
+  width: 40.78vw;
+  height: 57.65vw;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-top: 3.2rem;
+  text-align: center;
 }
 
 #live .person .item:nth-child(1) {
+  padding-top: 47.68px;
   background: url("/image/people-1.png");
+  background-size: 100% 100%;
 }
 
 #live .person .item:nth-child(2) {
   background: url("/image/people-4.png");
+  background-size: 100% 100%;
 }
 
 #live .person .item:nth-child(3) {
   background: url("/image/people-3.png");
+  background-size: 100% 100%;
 }
 
 #live .person .item:nth-child(4) {
   background: url("/image/people-2.png");
+  background-size: 100% 100%;
 }
 
-#live .item .describe {
+#live .person .item .describe {
   font-family: "Noto Serif TC";
   font-style: normal;
-  font-weight: 900;
-  font-size: 5.7rem;
-  line-height: 6.2rem;
   color: var(--borwn-color);
+  line-height: 6.2rem;
+  font-weight: 900;
+}
+
+#live .person .item:nth-child(1) .describe {
+  font-size: 5.7rem;
+}
+
+#live .person .item:nth-child(2) .describe {
+  font-size: 4.9rem;
+}
+
+#live .person .item:nth-child(3) .describe {
+  font-size: 4.6rem;
+}
+
+#live .person .item:nth-child(4) .describe {
+  font-size: 4.4rem;
 }
 
 #live .item .time {
-  font-family: "Noto Serif TC";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
   font-size: 3.5rem;
@@ -401,9 +455,16 @@
 #live .item .name {
   background: url("/image/person-name-bg.png");
   background-size: 100% 100%;
-  padding: 0.7rem 3.5rem 0.7rem 2.4rem;
-  max-width: 259px;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  width: 259px;
   height: 66px;
+  position: absolute;
+  left: 50%;
+  bottom: 12.12%;
+  transform: translateX(-50%);
+}
+
+#live .item .name p {
   font-family: "Noto Sans TC";
   font-style: normal;
   font-weight: 700;
@@ -412,10 +473,6 @@
   /* or 130% */
   color: var(--white-color);
   text-align: center;
-  position: absolute;
-  left: 50%;
-  bottom: 12.12%;
-  transform: translateX(-50%);
 }
 /************live sytle end******************/
 
@@ -427,11 +484,11 @@ footer .container {
   text-align: center;
 }
 
-footer .sponsor {
+footer .sponsor > h1 {
   font-family: "Noto Serif TC";
   font-style: normal;
   font-weight: 900;
-  font-size: 6rem;
+  font-size: 60px;
   line-height: 8.6rem;
   color: var(--white-color);
   margin-bottom: 5rem;
