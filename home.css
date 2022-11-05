@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "AR JULIAN";
-  src: url("./font/ARJULIAN.ttf");
+  src: url(./font/ARJULIAN.ttf);
 }
 
 * {
@@ -47,7 +47,7 @@ section {
 
 .home {
   height: 100%;
-  background: url(/image/bg-paper.png) no-repeat center;
+  background: url("./image/bg-paper.png") no-repeat center;
   background-size: 100% 100%;
   padding: 10.1rem 4rem 2.2rem;
   position: relative;
@@ -154,7 +154,8 @@ section {
 /* nav content */
 
 .home .content {
-  background: url("./image/bg.png") no-repeat center/100% 100%;
+  background: url("./image/bg.png") no-repeat;
+  background-size: 100% 100%;
   max-width: 1213px;
   height: 100%;
   margin: 0 auto;

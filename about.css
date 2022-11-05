@@ -436,22 +436,22 @@
 
 #live .person .item:nth-child(1) {
   padding-top: 47.68px;
-  background: url("./image/people-1.png");
+  background-image: url("./image/people-1.png");
   background-size: 100% 100%;
 }
 
 #live .person .item:nth-child(2) {
-  background: url("./image/people-4.png");
+  background-image: url("./image/people-4.png");
   background-size: 100% 100%;
 }
 
 #live .person .item:nth-child(3) {
-  background: url("./image/people-3.png");
+  background-image: url("./image/people-3.png");
   background-size: 100% 100%;
 }
 
 #live .person .item:nth-child(4) {
-  background: url("./image/people-2.png");
+  background-image: url("./image/people-2.png");
   background-size: 100% 100%;
 }
 
@@ -489,7 +489,7 @@
 }
 
 #live .item .name {
-  background: url("./image/person-name-bg.png");
+  background-image: url("./image/person-name-bg.png");
   background-size: 100% 100%;
   padding: 0.7rem 2rem 0.7rem 2rem;
   width: 259px;
