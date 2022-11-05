@@ -270,7 +270,6 @@
 .time .line-up::after {
   content: "";
   width: 80%;
-  /* width: 85vw; */
   height: 5px;
   background-color: var(--borwn-color);
   position: absolute;
@@ -316,10 +315,8 @@
 .awards .awards-items {
   padding: 9.2rem 4.1rem;
   display: flex;
-  /* width: 100%; */
   gap: 2rem;
   margin: 0 auto;
-  /* height: px; */
 }
 
 .awards .awards-items .item {
@@ -328,6 +325,7 @@
 
 .awards-items .item .pic {
   width: 30.15vw;
+
   height: 29.21vw;
   position: relative;
 }
@@ -422,8 +420,6 @@
 
 #live .person .item {
   padding: 20.6px 6rem 27.26px;
-  /* width: 40.78vw; */
-  /* max-width: 522px; */
   height: 57.65vw;
   position: relative;
   display: flex;
