@@ -213,10 +213,8 @@
 }
 
 .time .process {
-  /* padding: 0 3.7rem; */
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
+  max-width: 1205px;
+  margin: 0 auto;
 }
 
 .time .line-up,
@@ -272,6 +270,7 @@
 .time .line-up::after {
   content: "";
   width: 80%;
+  /* width: 85vw; */
   height: 5px;
   background-color: var(--borwn-color);
   position: absolute;
@@ -398,7 +397,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* border: 1px solid black; */
 }
 
 .live-open span {
@@ -419,11 +417,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  margin: 0 auto;
 }
 
 #live .person .item {
   padding: 20.6px 6rem 27.26px;
-  width: 40.78vw;
+  /* width: 40.78vw; */
+  /* max-width: 522px; */
   height: 57.65vw;
   position: relative;
   display: flex;
@@ -432,6 +432,7 @@
   align-items: center;
   margin-top: 3.2rem;
   text-align: center;
+  flex-basis: 48%;
 }
 
 #live .person .item:nth-child(1) {
