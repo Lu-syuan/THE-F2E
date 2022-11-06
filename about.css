@@ -313,20 +313,25 @@
 }
 
 .awards .awards-items {
-  padding: 9.2rem 4.1rem;
+  padding: 9.2rem 0rem;
   display: flex;
   gap: 2rem;
   margin: 0 auto;
+  /* height: 374.07px; */
+  width: 1198px;
 }
 
 .awards .awards-items .item {
-  width: 30.15vw;
+  /* width: 30.15vw; */
+  width: 386px;
 }
 
 .awards-items .item .pic {
-  width: 30.15vw;
+  /* width: 30.15vw; */
+  /* height: 29.21vw; */
 
-  height: 29.21vw;
+  width: 386px;
+  height: 374.07px;
   position: relative;
 }
 
@@ -624,6 +629,7 @@ footer .logo .pic:nth-child(3) {
   position: absolute;
   text-align: center;
   color: var(--white-color);
+  cursor: pointer;
 }
 
 .beans.isCheck {
