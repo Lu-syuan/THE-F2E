@@ -318,19 +318,19 @@
   gap: 2rem;
   margin: 0 auto;
   /* height: 374.07px; */
-  width: 1198px;
+  max-width: 1198px;
 }
 
 .awards .awards-items .item {
   /* width: 30.15vw; */
-  width: 386px;
+  max-width: 386px;
 }
 
 .awards-items .item .pic {
   /* width: 30.15vw; */
   /* height: 29.21vw; */
 
-  width: 386px;
+  max-width: 386px;
   height: 374.07px;
   position: relative;
 }
@@ -421,6 +421,8 @@
   flex-wrap: wrap;
   gap: 2rem;
   margin: 0 auto;
+  justify-content: center;
+  max-width: 1280px;
 }
 
 #live .person .item {
@@ -433,7 +435,9 @@
   align-items: center;
   margin-top: 3.2rem;
   text-align: center;
-  flex-basis: 48%;
+  max-width: 522px;
+  height: 738.5px;
+  /* flex-basis: 48%; */
 }
 
 #live .person .item:nth-child(1) {
